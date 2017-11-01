@@ -29,3 +29,12 @@ export const removeMember = (team, member) => {
     });
   };
 };
+
+export const addMember = (team, member) => {
+  return dispatch => {
+    dispatch({
+      type: 'ADD_MEMBER',
+      payload: { team, member }
+    });
+  };
+};
